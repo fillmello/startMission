@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'National2Compressed';
+  src: url('/fonts/National2Compressed-Regular.woff2') format('woff2'),
+    url('/fonts/National2Compressed-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'National2Compressed';
+  src: url('/fonts/National2Compressed-Medium.woff2') format('woff2'),
+    url('/fonts/National2Compressed-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'National2Compressed';
+  src: url('/fonts/National2Compressed-Bold.woff2') format('woff2'),
+    url('/fonts/National2Compressed-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'National2Compressed';
+  src: url('/fonts/National2Compressed-ExtraBold.woff2') format('woff2'),
+    url('/fonts/National2Compressed-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'National2Condensed';
+  src: url('/fonts/National2Condensed-Medium.woff2') format('woff2'),
+    url('/fonts/National2Condensed-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  font-family: 'National2Compressed', 'National2Condensed', 'Helvetica Neue', 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #f6f6f6;
+  background-color: #0b0b0b;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #0b0b0b;
+}
+
+#root {
+  min-height: 100vh;
+}
