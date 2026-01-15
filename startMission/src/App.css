@@ -37,6 +37,14 @@
   pointer-events: none;
 }
 
+.logo img {
+  margin-right: 4.2rem;
+  margin-top: 2.6rem;
+  width: 2.1rem;
+  height: 2.1rem;
+  display: block;
+}
+
 .hero__layer {
   position: absolute;
   inset: 0;
@@ -80,7 +88,7 @@
 }
 .hero__meta {
   font-family: 'National2Compressed', 'National2Condensed', 'Helvetica Neue', 'Inter', system-ui, sans-serif;
-  font-size: 0.55rem;
+  font-size: 0.58rem;
   text-transform: uppercase;
   line-height: 0.9;
   letter-spacing: 0.02em;
@@ -94,9 +102,9 @@
   font-family: 'National2Compressed', 'National2Condensed', 'Helvetica Neue', 'Inter', system-ui, sans-serif;
   font-size: 0.8rem;
   letter-spacing: 0.02em;
-  font-weight: 500;
+  font-weight: 600;
   margin-top: 2.44rem;
-  margin-right: 4.2rem;
+  margin-right: -0.11rem;
   color: #181818;
 }
 

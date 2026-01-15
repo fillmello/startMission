@@ -1,7 +1,7 @@
 import banner from './assets/bannerHeader.jpeg'
-import overlay from './assets/bannerHeaderOverlay.png'
-import overlays from './assets/fundoVazio.png'
+import overlay from './assets/fundoVazio.png'
 import './App.css'
+import { Header } from './Header'
 
 function App() {
   return (
@@ -13,20 +13,7 @@ function App() {
           className="hero__overlay"
         />
         <div className="hero__layer">
-          <div className="hero__topbar">
-            <span className="hero__brand">
-              <span className="hero__brand-start">Start</span> ( <span className="hero__rocket">🚀</span> ) <span className="hero__brand-mission">Mission</span>
-            </span>
-            <span className="hero__meta">
-              A ESCOLA START,<br />JANEIRO 2025 --<br />SEDE CAMPESTRE CENTRAL
-            </span>
-            <span className="hero__link">
-              central.online<strong>/startmission</strong>
-            </span>
-            <span className="hero__badge" aria-hidden="true">
-              Ⓒ
-            </span>
-          </div>
+          <Header />
 
           <div className="hero__title">
             Assuma o seu
