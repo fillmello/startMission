@@ -1,24 +1,21 @@
 .page {
-  min-height: 100vh;
-  background: #0b0b0b;
-  display: flex;
-  justify-content: center;
-}
-
-.hero {
   --accent: #c74b3c;
   --ink: #0b0b0b;
+  min-height: 100vh;
   width: 100vw;
   min-height: 720px;
   aspect-ratio: 16 / 9;
   background-size: cover;
   background-position: center;
+  background-color: #0b0b0b;
   position: relative;
   overflow: hidden;
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
 }
 
-.hero::after {
+.page::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -38,10 +35,8 @@
 }
 
 .logo img {
-  margin-right: 4.2rem;
-  margin-top: 2.6rem;
-  width: 2.1rem;
-  height: 2.1rem;
+  width: 2.95rem;
+  height: 2.95rem;
   display: block;
 }
 
@@ -56,55 +51,58 @@
 
 .hero__topbar {
   position: absolute;
-  top: 26px;
-  left: 72px;
-  right: 72px;
+  top: 10px;
+  left: 120px;
+  right: 120px;
+  z-index: 3;
+  border-radius: 1.1rem;
   display: flex;
   align-items: center;
-  gap: 28px;
-  font-size: 1.45rem;
+  gap: 40px;
+  font-size: 1.6rem;
   font-weight: 700;
+  background-color: white;
+  padding: 0.7rem 3rem;
 }
 
 .hero__brand {
   color: var(--accent);
   letter-spacing: -0.01em;
   font-weight: 600;
-  font-size: 30pt;
-  margin-top: 2.13rem;
-  margin-left: 3.84rem;
+  font-size: 39pt;
+  line-height: 1;
+  padding: 0px;
   font-family: 'National2Compressed', 'National2Condensed', 'Helvetica Neue', 'Inter', system-ui, sans-serif;
 }
 
 .hero__rocket {
   font-size: 0.8em;
 }
+
 .hero__brand-start {
   margin-right: 0.15em;
+  padding: 0px;
 }
 
 .hero__brand-mission {
   margin-left: 0.15em;
 }
+
 .hero__meta {
   font-family: 'National2Compressed', 'National2Condensed', 'Helvetica Neue', 'Inter', system-ui, sans-serif;
-  font-size: 0.58rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   line-height: 0.9;
   letter-spacing: 0.02em;
-  margin-top: 2.6rem;
-  margin-left: 0.34rem;
   color: #181818;
 }
 
 .hero__link {
   margin-left: auto;
   font-family: 'National2Compressed', 'National2Condensed', 'Helvetica Neue', 'Inter', system-ui, sans-serif;
-  font-size: 0.8rem;
+  font-size: 1.25rem;
   letter-spacing: 0.02em;
   font-weight: 600;
-  margin-top: 2.44rem;
-  margin-right: -0.11rem;
   color: #181818;
 }
 
@@ -120,7 +118,7 @@
   border-radius: 50%;
   display: grid;
   place-items: center;
-  font-size: 0.85rem;
+  font-size: 1.105rem;
   font-weight: 700;
   line-height: 1;
 }
@@ -129,7 +127,7 @@
   position: absolute;
   top: 190px;
   left: 110px;
-  font-size: clamp(3.6rem, 5vw, 5.2rem);
+  font-size: clamp(4.68rem, 6.5vw, 6.76rem);
   line-height: 0.95;
   font-weight: 800;
   font-family: 'National2Compressed', 'National2Condensed', 'Helvetica Neue', 'Inter', system-ui, sans-serif;
@@ -140,8 +138,8 @@
 .hero__cta {
   position: absolute;
   right: 140px;
-  bottom: 120px;
-  font-size: clamp(2.6rem, 4vw, 3.5rem);
+  bottom: 80px;
+  font-size: clamp(3.38rem, 5.2vw, 4.55rem);
   line-height: 0.98;
   font-weight: 800;
   font-family: 'National2Compressed', 'National2Condensed', 'Helvetica Neue', 'Inter', system-ui, sans-serif;
@@ -169,7 +167,7 @@
 .hero__globe {
   position: absolute;
   left: 122px;
-  bottom: 78px;
+  bottom: 48px;
 }
 
 .hero__globe-icon {
@@ -210,9 +208,10 @@
   }
 
   .hero__topbar {
-    left: 54px;
+    left: 4px;
     right: 54px;
-    font-size: 1.25rem;
+    font-size: 1.625rem;
+    padding: 10rem;
     gap: 18px;
   }
 }
