@@ -4,7 +4,11 @@ import { Header } from './Header'
 
 export function SubHeader(){
     return(
+
+        
     <div className='size__container'>
+
+
         <Header />
         <img src={overlay} alt="overlay" className="overlay__image" />
 
