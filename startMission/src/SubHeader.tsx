@@ -1,4 +1,9 @@
 import overlay from './assets/quadrado_branco@2x.png'
+import bannerOverlay from './assets/bannerHeaderOverlay.png'
+import quadradinhos from './assets/quadradinhos@2x.png'
+import aro1 from './assets/aro_1@2x.png'
+import aro2 from './assets/aro_2@2x.png'
+import bolas from './assets/bolas@2x.png'
 import "./SubHeader.css"
 import { Header } from './Header'
 
@@ -11,6 +16,11 @@ export function SubHeader(){
 
         <Header />
         <img src={overlay} alt="overlay" className="overlay__image" />
+        <img src={bannerOverlay} alt="banner overlay reference" className='z-7 banner__overlay' />
+        <img src={quadradinhos} alt="quadradinhos" className='quadradinhos' />
+        <img src={aro1} alt="aro 1" className='aro aro-1' />
+        <img src={aro2} alt="aro 2" className='aro aro-2' />
+        <img src={bolas} alt="bolas" className='bolas' />
 
         <h1 className="hero__title">
             Assuma o seu

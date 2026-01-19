@@ -19,6 +19,61 @@
   z-index: 2;
 }
 
+.size__container .banner__overlay {
+  position: absolute;
+  top: 0.65%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: auto;
+  z-index: 10;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.size__container .quadradinhos {
+  position: absolute;
+  top: 25.1%;
+  left: 54.8%;
+  transform: translateX(-50%);
+  width: 65%;
+  height: auto;
+  z-index: 3;
+}
+
+.size__container .aro {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  pointer-events: none;
+  width: 10%;
+  height: auto;
+}
+
+.size__container .aro-1 {
+  top: 41.1%;
+  width: 7.3%;
+  height: auto;
+}
+
+.size__container .aro-2 {
+  top: 37.35%;
+  width: 12%;
+  height: auto;
+}
+
+.size__container .bolas {
+  position: absolute;
+  top: 46.8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 9.9%;
+  height: auto;
+  z-index: 1;
+  pointer-events: none;
+}
+
 /* Header ocupa 100% da largura do container */
 .size__container .hero__topbar {
   position: absolute;
