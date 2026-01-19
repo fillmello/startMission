@@ -5,6 +5,7 @@
   max-width: 1770px;
   margin: 0 auto;
   container-type: inline-size;
+  overflow: hidden;
 }
 
 /* A imagem define a largura do container */
@@ -17,7 +18,7 @@
 /* Header ocupa 100% da largura do container */
 .size__container .hero__topbar {
   position: absolute;
-  top: 10px;
+  top: 1.5cqi;
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;
@@ -26,26 +27,30 @@
 
 .hero__title {
   position: absolute;
-  top: 5%;
-  left: 6%;
+  top: 13.5%;
+  left: 9.4%;
   font-size: 6cqi;
-  line-height: 0.9;
+  line-height: 0.85;
   font-weight: 700;
   font-family: 'National2Compressed', 'National2Condensed', 'Helvetica Neue', 'Inter', system-ui, sans-serif;
   color: #0d0d0d;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.0em;
+  z-index: 2;
 }
 
 .hero__cta {
   position: absolute;
-  right: 6%;
-  bottom: 2%;
+  top: 51%;
+  right: 10%;
   font-size: 6cqi;
-  line-height: 0.9;
+  line-height: 0.8;
   font-weight: 700;
   font-family: 'National2Compressed', 'National2Condensed', 'Helvetica Neue', 'Inter', system-ui, sans-serif;
   color: #0d0d0d;
   text-align: right;
   max-width: 38%;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.0em;
+  z-index: 2;
 }
+
+/* Não precisa de media queries - as unidades cqi escalam proporcionalmente */
