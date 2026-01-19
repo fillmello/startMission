@@ -1,0 +1,49 @@
+/* Container que define o tamanho baseado na imagem */
+.size__container {
+  position: relative;
+  width: 100%;
+  max-width: 1770px;
+  margin: 0 auto;
+}
+
+/* A imagem define a largura do container */
+.size__container .overlay__image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Header ocupa 100% da largura do container */
+.size__container .hero__topbar {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  width: 86.7%;
+}
+
+.hero__title {
+  position: absolute;
+  top: 190px;
+  left: 110px;
+  font-size: clamp(4.68rem, 6.5vw, 6.76rem);
+  line-height: 0.95;
+  font-weight: 800;
+  font-family: 'National2Compressed', 'National2Condensed', 'Helvetica Neue', 'Inter', system-ui, sans-serif;
+  color: #0d0d0d;
+  letter-spacing: -0.01em;
+}
+
+.hero__cta {
+  position: absolute;
+  right: 140px;
+  bottom: 80px;
+  font-size: clamp(3.38rem, 5.2vw, 4.55rem);
+  line-height: 0.98;
+  font-weight: 800;
+  font-family: 'National2Compressed', 'National2Condensed', 'Helvetica Neue', 'Inter', system-ui, sans-serif;
+  color: #0d0d0d;
+  text-align: right;
+  max-width: 380px;
+}

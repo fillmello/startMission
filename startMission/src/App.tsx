@@ -1,32 +1,12 @@
 import banner from './assets/bannerHeader.jpeg'
-import overlay from './assets/bannerHeaderOverlay.png'
 import './App.css'
-import { Header } from './Header'
+import { SubHeader } from './SubHeader'
 
 function App() {
   return (
-    <div className="page" style={{ backgroundImage: `url(${banner})` }}>
-      <img
-        src={overlay}
-        alt="Start Mission overlay"
-        className="hero__overlay"
-      />
-      
-      <Header />
+    <div className="page" style={{ backgroundImage: `url(${banner})` }}>      
+      <SubHeader />
 
-      <h1 className="hero__title">
-        Assuma o seu
-        <br />
-        lugar no reino:
-      </h1>
-
-      <p className="hero__cta">
-        sim, você tem
-        <br />
-        um chamado
-        <br />
-        para missões.
-      </p>
 
       <ul className="hero__bullets" aria-hidden="true">
         <li className="hero__bullet hero__bullet--1"></li>
