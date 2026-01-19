@@ -4,6 +4,7 @@
   width: 100%;
   max-width: 1770px;
   margin: 0 auto;
+  container-type: inline-size;
 }
 
 /* A imagem define a largura do container */
@@ -25,26 +26,26 @@
 
 .hero__title {
   position: absolute;
-  top: 8.55rem;
-  left: 10.4rem;
-  font-size: clamp(4.38rem, 6.0vw, 6.36rem);
+  top: 5%;
+  left: 6%;
+  font-size: 6cqi;
   line-height: 0.9;
   font-weight: 700;
   font-family: 'National2Compressed', 'National2Condensed', 'Helvetica Neue', 'Inter', system-ui, sans-serif;
   color: #0d0d0d;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.05em;
 }
 
 .hero__cta {
   position: absolute;
-  right: 10.85rem;
-  bottom: 1rem;
-  font-size: clamp(4.38rem, 6.0vw, 6.36rem);
+  right: 6%;
+  bottom: 2%;
+  font-size: 6cqi;
   line-height: 0.9;
   font-weight: 700;
   font-family: 'National2Compressed', 'National2Condensed', 'Helvetica Neue', 'Inter', system-ui, sans-serif;
   color: #0d0d0d;
   text-align: right;
-  max-width: 680px;
-letter-spacing: 0.1rem;
+  max-width: 38%;
+  letter-spacing: 0.05em;
 }
