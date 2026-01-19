@@ -25,25 +25,26 @@
 
 .hero__title {
   position: absolute;
-  top: 190px;
-  left: 110px;
-  font-size: clamp(4.68rem, 6.5vw, 6.76rem);
-  line-height: 0.95;
-  font-weight: 800;
+  top: 8.55rem;
+  left: 10.4rem;
+  font-size: clamp(4.38rem, 6.0vw, 6.36rem);
+  line-height: 0.9;
+  font-weight: 700;
   font-family: 'National2Compressed', 'National2Condensed', 'Helvetica Neue', 'Inter', system-ui, sans-serif;
   color: #0d0d0d;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.1rem;
 }
 
 .hero__cta {
   position: absolute;
-  right: 140px;
-  bottom: 80px;
-  font-size: clamp(3.38rem, 5.2vw, 4.55rem);
-  line-height: 0.98;
-  font-weight: 800;
+  right: 10.85rem;
+  bottom: 1rem;
+  font-size: clamp(4.38rem, 6.0vw, 6.36rem);
+  line-height: 0.9;
+  font-weight: 700;
   font-family: 'National2Compressed', 'National2Condensed', 'Helvetica Neue', 'Inter', system-ui, sans-serif;
   color: #0d0d0d;
   text-align: right;
-  max-width: 380px;
+  max-width: 680px;
+letter-spacing: 0.1rem;
 }
