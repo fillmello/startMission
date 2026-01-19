@@ -8,16 +8,12 @@ function App() {
       <SubHeader />
 
 
-      <ul className="hero__bullets" aria-hidden="true">
+      <ul className="hero__bullets top-[60%]" aria-hidden="true">
         <li className="hero__bullet hero__bullet--1"></li>
         <li className="hero__bullet hero__bullet--2"></li>
         <li className="hero__bullet hero__bullet--3"></li>
         <li className="hero__bullet hero__bullet--4"></li>
       </ul>
-
-      <div className="hero__globe" aria-hidden="true">
-        <div className="hero__globe-icon"></div>
-      </div>
     </div>
   )
 }

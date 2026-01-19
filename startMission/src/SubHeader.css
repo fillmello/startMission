@@ -6,13 +6,17 @@
   margin: 0 auto;
   container-type: inline-size;
   overflow: hidden;
+  z-index: 2;
 }
 
 /* A imagem define a largura do container */
 .size__container .overlay__image {
-  width: 100%;
+  width: 86.7%;
+  margin: 10% auto;
   height: auto;
   display: block;
+  position: relative;
+  z-index: 2;
 }
 
 /* Header ocupa 100% da largura do container */
@@ -40,7 +44,7 @@
 
 .hero__cta {
   position: absolute;
-  top: 51%;
+  top: 46%;
   right: 10%;
   font-size: 6cqi;
   line-height: 0.8;

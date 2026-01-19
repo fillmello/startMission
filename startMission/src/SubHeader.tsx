@@ -1,4 +1,4 @@
-import overlay from './assets/bannerHeaderOverlay.png'
+import overlay from './assets/quadrado_branco@2x.png'
 import "./SubHeader.css"
 import { Header } from './Header'
 

@@ -125,9 +125,16 @@
 .hero__bullets {
   position: absolute;
   left: 96px;
-  top: 330px;
   display: grid;
   gap: 20px;
+}
+
+.hero__bullet {
+  width: 14px;
+  height: 14px;
+  background: var(--accent);
+  border-radius: 50%;
+  display: block;
 }
 
 .hero__bullets span {
