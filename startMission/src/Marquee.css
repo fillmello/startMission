@@ -1,0 +1,42 @@
+/* Marquee stripe */
+.marquee {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 6%;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.marquee__inner {
+  display: flex;
+  width: 200%;
+  animation: marquee var(--duration, 20s) linear infinite;
+}
+
+/* Reverse direction */
+.marquee--reverse .marquee__inner {
+  animation-direction: reverse;
+}
+
+.marquee__track {
+  display: flex;
+  gap: 4cqi;
+  align-items: center;
+  width: 50%;
+  padding-inline: 4cqi;
+}
+
+.marquee__item {
+  font-family: 'National2Compressed', 'National2Condensed', 'Helvetica Neue', 'Inter', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 4cqi;
+  color: #0d0d0d;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
