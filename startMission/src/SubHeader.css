@@ -74,6 +74,17 @@
   pointer-events: none;
 }
 
+.size__container .pt {
+  position: absolute;
+  top: 29.4%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  width: 4%;
+  height: auto;
+  z-index: 1;
+  pointer-events: none;
+}
+
 /* Header ocupa 100% da largura do container */
 .size__container .hero__topbar {
   position: absolute;
