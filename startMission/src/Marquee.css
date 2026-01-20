@@ -38,7 +38,7 @@
   font-family: 'National2Compressed', 'National2Condensed', 'Helvetica Neue', 'Inter', system-ui, sans-serif;
   font-weight: 700;
   font-size: 4cqi;
-  color: #0d0d0d;
+  color: inherit;
   text-transform: uppercase;
   white-space: nowrap;
 }
