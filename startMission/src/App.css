@@ -14,6 +14,12 @@
   align-items: flex-start;
 }
 
+/* Desabilita cliques e seleção em todas as imagens */
+img {
+  pointer-events: none;
+  user-select: none;
+}
+
 .page::after {
   content: '';
   position: absolute;
