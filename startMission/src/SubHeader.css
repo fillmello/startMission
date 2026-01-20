@@ -7,6 +7,7 @@
   container-type: inline-size;
   overflow: hidden;
   z-index: 2;
+  padding-bottom: 6cqi; /* espaço extra abaixo para separar do marquee */
 }
 
 /* A imagem define a largura do container */
@@ -60,8 +61,8 @@
 }
 
 .size__container .aro-1 {
-  top: 41.1%;
-  left: 46.52%;
+  top: 40.8%;
+  left: 46.4%;
   width: 7.3%;
   height: auto;
 }
@@ -75,8 +76,8 @@
 
 .size__container .bolas {
   position: absolute;
-  top: 46.52%;
-  left: 45.1%;
+  top: 45.38%;
+  left: 45.08%;
   transform: translate(-50%, -50%);
   width: 10%;
   height: auto;
@@ -107,8 +108,8 @@
 
 .hero__title {
   position: absolute;
-  top: 13.5%;
-  left: 9.4%;
+  top: 12.4%;
+  left: 9.38%;
   font-size: 6cqi;
   line-height: 0.85;
   font-weight: 700;
@@ -120,7 +121,7 @@
 
 .hero__cta {
   position: absolute;
-  top: 46%;
+  top: 42%;
   right: 10%;
   font-size: 6cqi;
   line-height: 0.8;

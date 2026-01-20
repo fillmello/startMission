@@ -10,8 +10,10 @@
 
 .marquee__inner {
   display: flex;
+  flex-wrap: nowrap;
   width: 200%;
   animation: marquee var(--duration, 20s) linear infinite;
+  will-change: transform;
 }
 
 /* Reverse direction */
@@ -21,13 +23,18 @@
 
 .marquee__track {
   display: flex;
+  flex-wrap: nowrap;
   gap: 4cqi;
   align-items: center;
   width: 50%;
+  flex: 0 0 50%;
   padding-inline: 4cqi;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .marquee__item {
+  display: inline-block;
   font-family: 'National2Compressed', 'National2Condensed', 'Helvetica Neue', 'Inter', system-ui, sans-serif;
   font-weight: 700;
   font-size: 4cqi;
