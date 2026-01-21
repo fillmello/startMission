@@ -1,73 +1,69 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# startMission
 
-Currently, two official plugins are available:
+## Visão Geral
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O **startMission** é um projeto desenvolvido com o objetivo de fornecer uma base moderna, escalável e eficiente para aplicações web utilizando as melhores práticas do ecossistema React. O projeto utiliza Vite para build rápido, Tailwind CSS para estilização utilitária, e TypeScript para maior segurança e produtividade no desenvolvimento.
 
-## React Compiler
+## Principais Tecnologias
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+- **React**: Biblioteca para construção de interfaces de usuário reativas e componentizadas.
+- **Vite**: Ferramenta de build e desenvolvimento ultrarrápida para projetos modernos.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática ao código, aumentando a robustez e a manutenibilidade.
+- **Tailwind CSS**: Framework utilitário para estilização rápida e responsiva.
+- **PostCSS**: Ferramenta para processamento avançado de CSS.
+- **ESLint**: Ferramenta de linting para garantir a qualidade e padronização do código.
 
-## Expanding the ESLint configuration
+## Estrutura do Projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+startMission/
+├── public/           # Arquivos públicos e fontes
+├── src/              # Código-fonte principal
+│   ├── assets/       # Imagens e outros assets
+│   ├── App.tsx       # Componente principal
+│   ├── Header.tsx    # Cabeçalho
+│   ├── Marquee.tsx   # Componente de destaque
+│   ├── SubHeader.tsx # Subcabeçalho
+│   └── ...           # Outros componentes e estilos
+├── package.json      # Dependências e scripts
+├── tailwind.config.js# Configuração do Tailwind
+├── vite.config.ts    # Configuração do Vite
+└── ...
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Como Executar Localmente
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/startMission.git
+   cd startMission/startMission
+   ```
+2. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
+3. **Inicie o servidor de desenvolvimento:**
+   ```bash
+   npm run dev
+   ```
+4. Acesse `http://localhost:5173` no navegador para visualizar o projeto.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Scripts Disponíveis
+
+- `npm run dev` — Inicia o servidor de desenvolvimento
+- `npm run build` — Gera a build de produção
+- `npm run preview` — Visualiza a build de produção localmente
+- `npm run lint` — Executa o linter para análise de código
+
+## Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues, enviar pull requests ou sugerir melhorias.
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT.
+
+---
+
+Desenvolvido com ♥ por [Seu Nome ou Equipe]

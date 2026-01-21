@@ -1,4 +1,5 @@
 import overlay from './assets/quadrado_branco@2x.png'
+import bannerHeaderOverlay from './assets/bannerHeaderOverlay.png'
 import quadradinhos from './assets/quadradinhos@2x.png'
 import aro1 from './assets/aro_1@2x.png'
 import aro2 from './assets/aro_2@2x.png'
@@ -11,20 +12,18 @@ import { Header } from './Header'
 
 export function SubHeader(){
     return(
-
-        
     <div className='size__container'>
-
-
-        <Header />
-        <img src={overlay} alt="overlay" className="overlay__image" />
-        <img src={quadradinhos} alt="quadradinhos" className='quadradinhos' />
+      {/* Banner overlay acima de tudo */}
+      <img src={bannerHeaderOverlay} alt="banner overlay" className="banner-header-overlay" />
+      <Header />
+      <img src={overlay} alt="overlay" className="overlay__image" />
+      <img src={quadradinhos} alt="quadradinhos" className='quadradinhos' />
         <motion.img 
           src={aro1} 
           alt="aro 1" 
           className='aro aro-1' 
-          initial={{ rotate: 0 }}
-          animate={{ rotate: [0, 720] }}
+          initial={{ rotate: 0, x: '-50%' }}
+          animate={{ rotate: [0, 720], x: '-50%' }}
           transition={{ 
             duration: 4,
             ease: [0.16, 1, 0.3, 1]
@@ -34,8 +33,8 @@ export function SubHeader(){
           src={aro2} 
           alt="aro 2" 
           className='aro aro-2' 
-          initial={{ rotate: 0 }}
-          animate={{ rotate: [0, -720] }}
+          initial={{ rotate: 0, x: '-50%' }}
+          animate={{ rotate: [0, -720], x: '-50%' }}
           transition={{ 
             duration: 4,
             ease: [0.16, 1, 0.3, 1]
@@ -57,19 +56,13 @@ export function SubHeader(){
           src={bolas} 
           alt="bolas" 
           className='bolas'
-          initial={{ rotate: 0, opacity: 0 }}
-          animate={{ 
-            rotate: [0, 720],
-            opacity: 1
-          }}
+          initial={{ rotate: 0, x: '-50%' }}
+          animate={{ rotate: [0, 720], x: '-50%' }}
           transition={{ 
             rotate: {
               duration: 4,
-              ease: [0.16, 1, 0.3, 1]
-            },
-            opacity: {
-              duration: 0.3,
-              ease: "easeOut"
+              ease: [0.16, 1, 0.3, 1],
+              repeat: Infinity
             }
           }}
         />

@@ -35,9 +35,9 @@
 
 .marquee__item {
   display: inline-block;
-  font-family: 'National2Compressed', 'National2Condensed', 'Helvetica Neue', 'Inter', system-ui, sans-serif;
+  font-family: 'Brandon Grotesque', 'National2Compressed', 'National2Condensed', 'Helvetica Neue', 'Inter', system-ui, sans-serif;
   font-weight: 700;
-  font-size: 4cqi;
+  font-size: 5cqi;
   color: inherit;
   text-transform: uppercase;
   white-space: nowrap;

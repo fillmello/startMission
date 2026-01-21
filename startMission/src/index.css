@@ -2,6 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Brandon Grotesque */
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/fonts/BrandonGrotesque-Light.woff2') format('woff2'),
+       url('/fonts/BrandonGrotesque-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/fonts/BrandonGrotesque-LightItalic.woff2') format('woff2'),
+       url('/fonts/BrandonGrotesque-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/fonts/BrandonGrotesque-Regular.woff2') format('woff2'),
+       url('/fonts/BrandonGrotesque-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/fonts/BrandonGrotesque-Medium.woff2') format('woff2'),
+       url('/fonts/BrandonGrotesque-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/fonts/BrandonGrotesque-MediumItalic.woff2') format('woff2'),
+       url('/fonts/BrandonGrotesque-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/fonts/BrandonGrotesque-Bold.woff2') format('woff2'),
+       url('/fonts/BrandonGrotesque-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/fonts/BrandonGrotesque-BoldItalic.woff2') format('woff2'),
+       url('/fonts/BrandonGrotesque-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
 @font-face {
   font-family: 'National2Compressed';
   src: url('/fonts/National2Compressed-Regular.woff2') format('woff2'),

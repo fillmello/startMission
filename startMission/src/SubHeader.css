@@ -1,3 +1,13 @@
+.banner-header-overlay {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0.4;
+}
 /* Container que define o tamanho baseado na imagem */
 .size__container {
   position: relative;
@@ -60,24 +70,60 @@
   will-change: transform;
 }
 
+/* Animação de rotação para o aro */
+@keyframes aro-rotate {
+  0% { transform: translateX(-50%) rotate(0deg); }
+  80% { transform: translateX(-50%) rotate(360deg); }
+  100% { transform: translateX(-50%) rotate(360deg); }
+}
+
+
+/* Animação de rotação para as bolas */
+@keyframes bolas-rotate {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  80% { transform: translate(-50%, -50%) rotate(360deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
 .size__container .aro-1 {
-  top: 40.8%;
-  left: 46.4%;
-  width: 7.3%;
+  /* ...existing code... */
+  animation: aro-rotate 2s cubic-bezier(0.77,0,0.175,1) infinite;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+.size__container .aro-2 {
+  /* ...existing code... */
+  animation: aro-rotate 2s cubic-bezier(0.77,0,0.175,1) infinite;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+}
+
+.size__container .bolas {
+  /* ...existing code... */
+  animation: bolas-rotate 3s cubic-bezier(0.77,0,0.175,1) infinite;
+  animation-delay: 0.1s;
+  animation-iteration-count: infinite;
+}
+
+.size__container .aro-1 {
+  top: 37.53%;
+  left: 50%;
+  width: 7.2%;
   height: auto;
 }
 
 .size__container .aro-2 {
-  top: 37.35%;
-  width: 12%;
-  left: 44%;
+  top: 34.23%;
+  width: 11.8%;
+  left: 50%;
   height: auto;
 }
 
 .size__container .bolas {
   position: absolute;
-  top: 45.47%;
-  left: 45.05%;
+  top: 42.75%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 10%;
   height: auto;
